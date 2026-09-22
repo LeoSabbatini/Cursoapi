@@ -10,5 +10,6 @@ public record InstrutorRequestDTO(
 
         @NotBlank(message = "Email é obrigatório")
         @Email(message = "Email inválido")
-        String email
+        String email,
+        String nomeCurso
 ) {}
